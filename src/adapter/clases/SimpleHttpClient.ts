@@ -1,13 +1,13 @@
-import { AxiosAdapater } from "./AxiosAdapter";
+import { AxiosAdapter } from "./AxiosAdapter";
 import { FetchAdapter } from "./FetchAdapter";
 
 export class SimpleHttpClient {
 
   private httpClientFetch: FetchAdapter;
-  private httpClientAxios: AxiosAdapater;
+  private httpClientAxios: AxiosAdapter;
 
   constructor() {
-    this.httpClientAxios = new AxiosAdapater();
+    this.httpClientAxios = new AxiosAdapter();
     this.httpClientFetch = new FetchAdapter();
   }
 

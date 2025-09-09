@@ -1,15 +1,11 @@
-
-// import { runAdapter } from "./adapter";
-// import { runSingleton } from "./singleton";
-// import { runFactory } from "./factory";
-
-import { runObserver } from "./observer/index";
+import { runAdapter } from "./adapter";
+import { runObserver } from "./observer";
 
 
 (
   async () => {
     await runObserver();
-    // await runAdapter();
+    await runAdapter();
     // await runSingleton();
     // await runFactory();
   }
